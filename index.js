@@ -15,5 +15,5 @@ app.use(express.static('public'));
 app.listen(5000);
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('/index.html');
 });

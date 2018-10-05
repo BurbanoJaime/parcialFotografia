@@ -6,11 +6,12 @@
 }
 
 body {
-  background-image: url(imagenes/img-noise-361x370.png);
+  background-image: url(/imagenes/img-noise-361x370.png);
 }
 
 .preloader-wrap {
-  background-image: url(imagenes/img-noise-361x370.png);
+  display: none;
+  background-image: url(/imagenes/img-noise-361x370.png);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -63,8 +64,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: flicker 5s infinite;
-          animation: flicker 5s infinite;
+  -webkit-animation: animation 5s infinite;
+          animation: animation 5s infinite;
   margin: -5px;
 }
 
@@ -151,6 +152,7 @@ body {
   transition: all .6s;
   margin: auto 15px;
   font-style: italic;
+  cursor: pointer;
 }
 
 .wrap .botones a:hover {
