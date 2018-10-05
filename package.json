@@ -1,4 +1,26 @@
 {
-  "name": "",
-  "version": ""
+  "name": "codigo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "express": "^4.16.3",
+    "handlebars": "^4.0.12",
+    "nodemon": "^1.18.4",
+    "npm": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurbanoJaime/parcialFotografia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BurbanoJaime/parcialFotografia/issues"
+  },
+  "homepage": "https://github.com/BurbanoJaime/parcialFotografia#readme",
+  "description": ""
 }

@@ -43,5 +43,5 @@ function animateValue(id, start, end, duration) {
 
 setTimeout(function(){
   $('.preloader-wrap').fadeOut(1200);
-}, time + 1000);
+}, time);
 
