@@ -109,6 +109,24 @@ body {
   }
 }
 
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,9 +159,40 @@ body {
   width: 120%;
 }
 
+.wrap .botones {
+  z-index: 200;
+  position: absolute;
+  bottom: 2vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100vw;
+}
+
 .wrap .botones a {
-  border: solid 2px transparent;
+  text-decoration: none !important;
+}
+
+.wrap .botones a div {
+  text-decoration: none;
   color: #c4c4c4;
+  border: solid 2px transparent;
   background: none;
   font-weight: 400;
   font-size: 18px;
@@ -153,11 +202,77 @@ body {
   margin: auto 15px;
   font-style: italic;
   cursor: pointer;
+  z-index: 100;
 }
 
-.wrap .botones a:hover {
+.wrap .botones a:hover div {
   border-bottom: solid 2px #ffcb22;
   color: #2e2e2e;
   font-weight: 600;
+}
+
+.botones_hist {
+  position: absolute;
+  bottom: 2vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100vw;
+}
+
+.botones_hist a {
+  text-decoration: none !important;
+}
+
+.botones_hist a div {
+  text-decoration: none;
+  color: #c4c4c4;
+  border: solid 2px transparent;
+  background: none;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px 15px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  margin: auto 15px;
+  font-style: italic;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.botones_hist a:hover div {
+  border-bottom: solid 2px #ffcb22;
+  color: #2e2e2e;
+  font-weight: 600;
+}
+
+#historia #texto {
+  position: absolute;
+  width: 70vw;
+  text-align: justify;
+  margin: 0 15vw;
+  top: 20vh;
+  opacity: 1;
+}
+
+#historia #texto h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

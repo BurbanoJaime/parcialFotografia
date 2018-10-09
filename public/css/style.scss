@@ -97,6 +97,16 @@ body {
     }
 }
 
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 .wrap {
     display: flex;
     flex-direction: column;
@@ -118,9 +128,69 @@ body {
     }
 
     .botones {
+        z-index: 200;
+        position: absolute;
+        bottom: 2vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+
         a {
-            border: solid 2px transparent;
+            text-decoration: none !important;
+
+            div {
+                text-decoration: none;
+                color: rgb(196, 196, 196);
+                border: solid 2px transparent;
+                background: none;
+                font-weight: 400;
+                font-size: 18px;
+                padding: 10px 15px;
+                transition: all .6s;
+                margin: auto 15px;
+                font-style: italic;
+                cursor: pointer;
+                z-index: 100;
+            }
+        }
+
+        a:hover {
+            div {
+                border-bottom: solid 2px rgb(255, 203, 34);
+                color: rgb(46, 46, 46);
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+.botones_hist {
+    position: absolute;
+    bottom: 2vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    
+    a {
+        text-decoration: none !important;
+
+        div {
+            text-decoration: none;
             color: rgb(196, 196, 196);
+            border: solid 2px transparent;
             background: none;
             font-weight: 400;
             font-size: 18px;
@@ -129,14 +199,31 @@ body {
             margin: auto 15px;
             font-style: italic;
             cursor: pointer;
+            z-index: 100;
         }
+    }
 
-        a:hover {
+    a:hover {
+        div {
             border-bottom: solid 2px rgb(255, 203, 34);
             color: rgb(46, 46, 46);
             font-weight: 600;
         }
-
     }
+}
 
+#historia {
+    #texto {
+        position: absolute;
+        width: 70vw;
+        text-align: justify;
+        margin: 0 15vw;
+        top: 20vh;
+        opacity: 1;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
 }

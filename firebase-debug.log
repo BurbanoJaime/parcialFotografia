@@ -1,0 +1,22 @@
+[debug] [2018-10-09T19:05:19.058Z] ----------------------------------------------------------------------
+[debug] [2018-10-09T19:05:19.061Z] Command:       D:\Programas\Node\node.exe C:\Users\Jaime David Burbano\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-10-09T19:05:19.061Z] CLI Version:   5.0.1
+[debug] [2018-10-09T19:05:19.061Z] Platform:      win32
+[debug] [2018-10-09T19:05:19.061Z] Node Version:  v8.11.3
+[debug] [2018-10-09T19:05:19.061Z] Time:          Tue Oct 09 2018 14:05:19 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-10-09T19:05:19.062Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-09T19:05:19.096Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-09T19:05:19.096Z] > authorizing via signed-in user
+[debug] [2018-10-09T19:05:19.097Z] [iam] checking project parcialfotografia for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2018-10-09T19:05:19.098Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-09T19:05:19.099Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-10-09T19:05:20.313Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-09T19:05:20.325Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parcialfotografia:testIamPermissions  
+
+[debug] [2018-10-09T19:05:37.753Z] Error: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
