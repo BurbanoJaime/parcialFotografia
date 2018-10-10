@@ -332,8 +332,9 @@ body {
 }
 
 .cont_prin .imagen {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   position: absolute;
