@@ -1,13 +1,14 @@
-[debug] [2018-10-10T18:32:47.236Z] ----------------------------------------------------------------------
-[debug] [2018-10-10T18:32:47.239Z] Command:       D:\Programas\Node\node.exe C:\Users\Jaime David Burbano\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
-[debug] [2018-10-10T18:32:47.239Z] CLI Version:   5.0.1
-[debug] [2018-10-10T18:32:47.239Z] Platform:      win32
-[debug] [2018-10-10T18:32:47.239Z] Node Version:  v8.11.3
-[debug] [2018-10-10T18:32:47.240Z] Time:          Wed Oct 10 2018 13:32:47 GMT-0500 (Hora est. Pacífico, Sudamérica)
-[debug] [2018-10-10T18:32:47.240Z] ----------------------------------------------------------------------
+[debug] [2018-10-10T18:46:07.435Z] ----------------------------------------------------------------------
+[debug] [2018-10-10T18:46:07.451Z] Command:       D:\Programas\Node\node.exe C:\Users\Jaime David Burbano\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-10-10T18:46:07.451Z] CLI Version:   5.0.1
+[debug] [2018-10-10T18:46:07.451Z] Platform:      win32
+[debug] [2018-10-10T18:46:07.451Z] Node Version:  v8.11.3
+[debug] [2018-10-10T18:46:07.452Z] Time:          Wed Oct 10 2018 13:46:07 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-10-10T18:46:07.452Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-10-10T18:32:47.252Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-10-10T18:32:47.253Z] > authorizing via signed-in user
-[debug] [2018-10-10T18:32:47.253Z] [iam] checking project parcialfotografia for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2018-10-10T18:32:47.255Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parcialfotografia:testIamPermissions  
-
+[debug] [2018-10-10T18:46:07.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-10T18:46:07.461Z] > authorizing via signed-in user
+[debug] [2018-10-10T18:46:07.461Z] [iam] checking project parcialfotografia for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2018-10-10T18:46:07.462Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-10T18:46:07.463Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>

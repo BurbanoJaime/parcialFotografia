@@ -335,6 +335,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
   width: 100vw;
   height: 100vh;
   position: absolute;

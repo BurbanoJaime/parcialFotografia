@@ -1,4 +1,3 @@
-//var carrusel = setInterval(cambiar, 5000);
 var ima = document.querySelector(".imagen");
 
 var imagenes = [];
@@ -46,8 +45,19 @@ var der = document.querySelector(".flechas_right").addEventListener("click", fun
 
     }
 
-   
+
     console.log("cambio derecha" + estado);
 
 });
 
+setInterval(function () {
+    console.log("cambiar");
+    selectores[estado].classList.remove("activo");
+    estado++;
+    selectores[estado].classList.add("activo");
+    ima.style.backgroundImage = 'url("' + imagenes[estado] + '")';
+
+    if (estado >= 16) {
+        estado = 0;
+    }
+}, 10000);
