@@ -210,7 +210,6 @@ body {
   font-style: italic;
   cursor: pointer;
   z-index: 100;
-  opacity: .6;
 }
 
 .wrap .botones a:hover div {
@@ -231,28 +230,14 @@ body {
 }
 
 .botones_hist {
-  position: absolute;
-  bottom: 2vh;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  width: 100vw;
+  margin-bottom: 20px;
 }
 
 .botones_hist a {
@@ -261,9 +246,8 @@ body {
 
 .botones_hist a div {
   text-decoration: none;
-  color: #c4c4c4;
+  color: #a8a8a8;
   border: solid 2px transparent;
-  background: none;
   font-weight: 400;
   font-size: 18px;
   padding: 10px 15px;
@@ -272,24 +256,34 @@ body {
   margin: auto 15px;
   font-style: italic;
   cursor: pointer;
-  z-index: 100;
   opacity: .6;
 }
 
 .botones_hist a:hover div {
-  color: #fff;
-  border-bottom: solid 2px #fff;
+  color: #302B21;
+  border-bottom: solid 2px #302B21;
   font-weight: 600;
   opacity: 1;
 }
 
+#historia {
+  margin-top: 50px;
+}
+
 #historia #texto {
-  position: absolute;
-  width: 70vw;
-  text-align: justify;
-  margin: 0 15vw;
-  top: 20vh;
+  width: 60vw;
+  margin: 0 20vw;
+  top: 7vh;
   opacity: 1;
+}
+
+#historia #texto .logo {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#historia #texto .logo img {
+  max-width: 50%;
 }
 
 #historia #texto h1 {
@@ -299,6 +293,26 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
   color: #302B21;
+}
+
+#historia #texto p {
+  color: #302B21;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+#historia #texto strong {
+  font-weight: bold;
+  color: #5e5e5e;
+}
+
+.credit {
+  font-weight: bold;
+  text-align: right;
+}
+
+.credit a {
+  color: #5e5e5e;
 }
 
 .item {
