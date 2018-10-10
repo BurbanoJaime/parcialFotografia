@@ -164,9 +164,10 @@ body {
 
 .wrap .logo_2 img {
   max-width: 50%;
+  min-width: 50%;
 }
 
-.wrap .botones {
+.botones {
   z-index: 200;
   position: absolute;
   bottom: 2vh;
@@ -192,11 +193,11 @@ body {
   width: 100vw;
 }
 
-.wrap .botones a {
+.botones a {
   text-decoration: none !important;
 }
 
-.wrap .botones a div {
+.botones a div {
   text-decoration: none;
   color: #c4c4c4;
   border: solid 2px transparent;
@@ -212,7 +213,7 @@ body {
   z-index: 100;
 }
 
-.wrap .botones a:hover div {
+.botones a:hover div {
   color: #fff;
   border-bottom: solid 2px #fff;
   font-weight: 600;
@@ -323,5 +324,125 @@ body {
 .item img {
   max-width: 80vw;
   max-height: 50vw;
+}
+
+/* ----- fotos ---------*/
+.cont_prin {
+  background: #242424;
+  position: absolute;
+}
+
+.cont_prin .imagen {
+  background-image: url("/imagenes/parcial/Mesa de trabajo 1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #242424;
+}
+
+.cont_prin .flechas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 30px;
+  margin: 48vh 0;
+  width: 100vw;
+  z-index: 30;
+  cursor: pointer;
+}
+
+.cont_prin .flechas .flechas_left {
+  position: absolute;
+  left: 50px;
+  opacity: .4;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.cont_prin .flechas .flechas_left:hover {
+  opacity: 1;
+}
+
+.cont_prin .flechas .flechas_right {
+  position: absolute;
+  right: 50px;
+  opacity: .4;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.cont_prin .flechas .flechas_right:hover {
+  opacity: 1;
+}
+
+.cont_prin .selectores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 80px;
+  position: absolute;
+  width: 20vw;
+  margin: 0 40vw;
+  z-index: 40;
+}
+
+.cont_prin .selectores .circulo {
+  border: solid #fff 1.5px;
+  background: none;
+  border-radius: 100px;
+  width: 10px;
+  height: 10px;
+  margin: 0 2.5px;
+  opacity: .6;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.cont_prin .selectores .activo {
+  background: #fff;
+  border: solid #fff 1px;
+  opacity: 1;
+}
+
+.cont_prin .selectores .circulo:hover {
+  background: #fff;
+  border: solid #fff 1px;
+  opacity: 1;
+}
+
+.fotografia {
+  bottom: -2vh;
 }
 /*# sourceMappingURL=style.css.map */
