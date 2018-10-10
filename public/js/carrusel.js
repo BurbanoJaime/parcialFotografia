@@ -8,21 +8,21 @@ for (var i = 0; i < 17; i++) {
     imagenes.push("/imagenes/parcial/Mesa de trabajo " + i + ".png");
     console.log("Imagenes Cargadas");
 }
+ima.style.backgroundImage = 'url("' + imagenes[estado] + '")';
+//ima.style.backgroundColor = "red";
 
 
+console.log();
 
-for (var i = 0; i < 17; i++) {
+for (var i = 0; i < 16; i++) {
     selectores.push(document.getElementById(i));
     if (selectores[i]) {
         selectores[i].addEventListener("click", function () {
-            estado = selectores.indexOf(this);
-            selectores[estado].classList.add("activo");
             console.log(estado);
         });
     }
 }
 
-ima.style.backgroundImage = "url(" + imagenes[estado] + ")";
 
 
 var izq = document.querySelector(".flechas_left").addEventListener("click", function () {
@@ -30,16 +30,20 @@ var izq = document.querySelector(".flechas_left").addEventListener("click", func
         selectores[estado].classList.remove("activo");
         estado--;
         selectores[estado].classList.add("activo");
+        ima.style.backgroundImage = 'url("' + imagenes[estado] + '")';
+
     }
 
     console.log("cambio izquierda" + estado);
 });
 
 var der = document.querySelector(".flechas_right").addEventListener("click", function () {
-    if (estado < 16) {
+    if (estado < 15) {
         selectores[estado].classList.remove("activo");
         estado++;
         selectores[estado].classList.add("activo");
+        ima.style.backgroundImage = 'url("' + imagenes[estado] + '")';
+
     }
 
    

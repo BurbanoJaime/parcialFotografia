@@ -328,18 +328,16 @@ body {
 
 /* ----- fotos ---------*/
 .cont_prin {
-  background: #242424;
   position: absolute;
 }
 
 .cont_prin .imagen {
-  background-image: url("/imagenes/parcial/Mesa de trabajo 1.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: #242424;
+  background-color: black;
 }
 
 .cont_prin .flechas {
@@ -427,7 +425,6 @@ body {
   opacity: .6;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  cursor: pointer;
 }
 
 .cont_prin .selectores .activo {
@@ -436,13 +433,8 @@ body {
   opacity: 1;
 }
 
-.cont_prin .selectores .circulo:hover {
-  background: #fff;
-  border: solid #fff 1px;
-  opacity: 1;
-}
-
+/*
 .fotografia {
-  bottom: -2vh;
-}
+    //bottom: -2vh;
+}*/
 /*# sourceMappingURL=style.css.map */
