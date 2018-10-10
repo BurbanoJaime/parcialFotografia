@@ -10,12 +10,18 @@ $color: #302B21;
 
 body {
     background-image: url(/imagenes/img-noise-361x370.png);
+}
 
+.fondo {
+    background-image: url(/imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .4s;
 }
 
 .preloader-wrap {
     display: none;
-    background-image: url(/imagenes/img-noise-361x370.png);
+    //background-image: url(/imagenes/img-noise-361x370.png);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -158,18 +164,31 @@ body {
                 font-style: italic;
                 cursor: pointer;
                 z-index: 100;
+                opacity: .6;
+
             }
         }
 
         a:hover {
             div {
-                border-bottom: solid 2px rgb(255, 203, 34);
-                color: $color;
+                color: #fff;
+                border-bottom: solid 2px #fff;
                 font-weight: 600;
+                opacity: 1;
             }
         }
     }
 
+}
+
+.creditos {
+    position: absolute;
+    bottom: 40px;
+    text-align: right;
+    color: #fff;
+    opacity: .6;
+    right: 20px;
+    z-index: 2000000;
 }
 
 .botones_hist {
@@ -201,16 +220,18 @@ body {
             font-style: italic;
             cursor: pointer;
             z-index: 100;
-           
+            opacity: .6;
         }
     }
 
     a:hover {
         div {
-            border-bottom: solid 2px rgb(255, 203, 34);
-            color: $color;
+            color: #fff;
+
+            border-bottom: solid 2px #fff;
             font-weight: 600;
-            
+            opacity: 1;
+
         }
     }
 }
@@ -234,3 +255,15 @@ body {
         }
     }
 }
+
+.item {
+    max-width: 100vw;
+    max-height: 100vh;
+    img{
+        max-width: 80vw;
+        max-height: 50vw;
+    }
+}
+
+
+
